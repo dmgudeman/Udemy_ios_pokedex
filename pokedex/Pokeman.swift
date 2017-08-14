@@ -17,8 +17,8 @@ class Pokemon {
     return _name
   }
   
-  var pokedexId: String {
-    return pokedexId
+  var pokedexId: Int {
+    return _pokedexId
   }
   
   init(name:String, pokedexId: Int) {

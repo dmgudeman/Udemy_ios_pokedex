@@ -24,11 +24,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell{
-    return cell
+      let pokemon = Pokemon(name:"Pokemon", pokedexId: indexPath.row)
+      cell.configureCell(pokemon: pokemon)
+      return cell
       
   }else {
     return UICollectionViewCell()
   }
+  
   }
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
