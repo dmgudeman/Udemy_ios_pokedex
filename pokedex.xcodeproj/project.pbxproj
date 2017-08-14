@@ -16,6 +16,9 @@
 		712E41821F421AD300137D60 /* Pokeman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712E41811F421AD300137D60 /* Pokeman.swift */; };
 		713AC4141F422F14001A7F3D /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AC4131F422F14001A7F3D /* PokeCell.swift */; };
 		713AC4161F424A54001A7F3D /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AC4151F424A54001A7F3D /* csv.swift */; };
+		713AC4181F42638E001A7F3D /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 713AC4171F42638E001A7F3D /* pokemon.ttf */; };
+		713AC41D1F4265C9001A7F3D /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 713AC41C1F4265C9001A7F3D /* music.png */; };
+		713AC41F1F426709001A7F3D /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 713AC41E1F426709001A7F3D /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		712E41811F421AD300137D60 /* Pokeman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokeman.swift; sourceTree = "<group>"; };
 		713AC4131F422F14001A7F3D /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		713AC4151F424A54001A7F3D /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		713AC4171F42638E001A7F3D /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		713AC41C1F4265C9001A7F3D /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		713AC41E1F426709001A7F3D /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +68,14 @@
 		712E416B1F41FE6000137D60 /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				713AC4151F424A54001A7F3D /* csv.swift */,
+				713AC41B1F4263D9001A7F3D /* Util */,
+				713AC41A1F4263CF001A7F3D /* Controller */,
+				713AC4191F4263B3001A7F3D /* Resources */,
 				713AC4121F422EE0001A7F3D /* View */,
 				712E41801F421ABC00137D60 /* Model */,
 				712E416C1F41FE6000137D60 /* AppDelegate.swift */,
-				712E416E1F41FE6000137D60 /* ViewController.swift */,
 				712E41701F41FE6000137D60 /* Main.storyboard */,
 				712E41731F41FE6000137D60 /* Assets.xcassets */,
-				712E417E1F42119900137D60 /* pokemon.csv */,
 				712E41751F41FE6000137D60 /* LaunchScreen.storyboard */,
 				712E41781F41FE6000137D60 /* Info.plist */,
 			);
@@ -90,6 +96,33 @@
 				713AC4131F422F14001A7F3D /* PokeCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		713AC4191F4263B3001A7F3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				713AC41E1F426709001A7F3D /* music.mp3 */,
+				713AC41C1F4265C9001A7F3D /* music.png */,
+				713AC4171F42638E001A7F3D /* pokemon.ttf */,
+				712E417E1F42119900137D60 /* pokemon.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		713AC41A1F4263CF001A7F3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				712E416E1F41FE6000137D60 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		713AC41B1F4263D9001A7F3D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				713AC4151F424A54001A7F3D /* csv.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +185,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713AC4181F42638E001A7F3D /* pokemon.ttf in Resources */,
 				712E41771F41FE6000137D60 /* LaunchScreen.storyboard in Resources */,
 				712E41741F41FE6000137D60 /* Assets.xcassets in Resources */,
 				712E417F1F42119900137D60 /* pokemon.csv in Resources */,
 				712E41721F41FE6000137D60 /* Main.storyboard in Resources */,
+				713AC41F1F426709001A7F3D /* music.mp3 in Resources */,
+				713AC41D1F4265C9001A7F3D /* music.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
