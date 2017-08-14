@@ -39,14 +39,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9Op-PP-edl">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="9Op-PP-edl" customClass="PokeCell" customModule="pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="107" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="TU1-Lb-gVF">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="TU1-Lb-gVF">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="bIz-In-HB0"/>
@@ -69,6 +69,10 @@
                                             <constraint firstAttribute="trailing" secondItem="TU1-Lb-gVF" secondAttribute="trailing" id="mpt-dD-oBO"/>
                                             <constraint firstAttribute="bottom" secondItem="Yq9-T0-fCG" secondAttribute="bottom" id="qOP-el-SOB"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="Yq9-T0-fCG" id="syR-9Q-ypw"/>
+                                            <outlet property="thumbImg" destination="TU1-Lb-gVF" id="1qi-Q2-u5S"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -91,10 +95,13 @@
                             <constraint firstAttribute="trailing" secondItem="G8F-bE-rWq" secondAttribute="trailing" id="qbF-k6-qL3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="E9q-08-BE2" id="F9r-pw-oeS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368.80000000000001" y="144.3778110944528"/>
+            <point key="canvasLocation" x="-201" y="88"/>
         </scene>
     </scenes>
     <resources>
