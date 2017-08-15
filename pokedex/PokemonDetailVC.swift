@@ -29,6 +29,7 @@ class PokemonDetailVC: UIViewController {
         super.viewDidLoad()
       pokemon.downloadPokemonDetail {
         // This is called after the network call is complete!
+        print("Im here")
         self.updateUI()
         
       }
