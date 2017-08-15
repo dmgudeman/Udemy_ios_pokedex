@@ -280,7 +280,7 @@
                                                                         <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="deviceRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwn-yt-z2h">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwn-yt-z2h">
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="75k-iY-1ui"/>
                                                                             <constraint firstAttribute="width" constant="30" id="wbB-nn-aSA"/>
@@ -415,8 +415,9 @@
                         <outlet property="evoLbl" destination="7l5-7L-kba" id="hB5-Rq-WWX"/>
                         <outlet property="heightLbl" destination="6oh-nT-ZVn" id="33p-rv-0Go"/>
                         <outlet property="mainImg" destination="Sru-72-wNJ" id="KLN-IE-q5j"/>
+                        <outlet property="nameLbl" destination="QK3-0F-kzA" id="wFH-OL-XZq"/>
                         <outlet property="nextEvoImg" destination="Ntd-p5-B5n" id="p48-wC-Vm2"/>
-                        <outlet property="pokedexId" destination="EpM-8O-GFD" id="YUV-rL-Eab"/>
+                        <outlet property="pokedexLbl" destination="Gwn-yt-z2h" id="7dh-2U-WOx"/>
                         <outlet property="typeLbl" destination="JPd-pb-kPO" id="kLK-uY-J4X"/>
                         <outlet property="weightLbl" destination="GOV-VZ-3gF" id="fRI-Yt-xiA"/>
                     </connections>
