@@ -27,11 +27,17 @@ class PokemonDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      pokemon.downloadPokemonDetail {
+        // This is called after the network call is complete!
+        self.updateUI()
+        
+      }
       
     }
 
-   
+  func updateUI() {
+  
+  }
   @IBAction func backBtnPressed(_ sender: AnyObject) {
     dismiss(animated: true, completion: nil)
   }
