@@ -162,6 +162,9 @@
                                         <frame key="frameInset" minX="8" minY="27" width="35" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="5No-Zj-oXt" eventType="touchUpInside" id="44B-UQ-j0g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="deviceRGB"/>
@@ -361,21 +364,8 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIl-IR-nrE">
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Next Evolution Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-7L-kba">
-                                        <frame key="frameInset" minX="18" minY="12" width="279" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="279" id="TbE-c5-dPO"/>
-                                            <constraint firstAttribute="height" constant="21" id="zSw-na-isz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstItem="7l5-7L-kba" firstAttribute="top" secondItem="RIl-IR-nrE" secondAttribute="top" constant="8" id="Ben-Pg-a3t"/>
                                     <constraint firstAttribute="height" constant="35" id="dAv-3K-VyI"/>
                                 </constraints>
                             </view>
@@ -392,6 +382,16 @@
                                     <constraint firstItem="Ntd-p5-B5n" firstAttribute="trailing" secondItem="FNx-Jm-qd9" secondAttribute="trailingMargin" id="mxc-Rl-uOI"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Next Evolution Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-7L-kba">
+                                <frame key="frameInset" minX="52" minY="323" width="279" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="TbE-c5-dPO"/>
+                                    <constraint firstAttribute="height" constant="21" id="zSw-na-isz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -399,6 +399,7 @@
                             <constraint firstItem="FNx-Jm-qd9" firstAttribute="top" secondItem="RIl-IR-nrE" secondAttribute="bottom" constant="20" id="7sI-Xa-EyE"/>
                             <constraint firstAttribute="trailing" secondItem="RIl-IR-nrE" secondAttribute="trailing" id="C01-VH-cpf"/>
                             <constraint firstItem="RIl-IR-nrE" firstAttribute="leading" secondItem="UdK-Wc-keD" secondAttribute="leading" id="EyK-Yl-J70"/>
+                            <constraint firstItem="7l5-7L-kba" firstAttribute="top" secondItem="UdK-Wc-keD" secondAttribute="top" constant="323" id="JVh-Jq-MPE"/>
                             <constraint firstItem="IqY-Rw-cKz" firstAttribute="top" secondItem="qKw-v7-xXS" secondAttribute="bottom" constant="8" id="MeV-7G-2mJ"/>
                             <constraint firstAttribute="trailing" secondItem="FNx-Jm-qd9" secondAttribute="trailing" id="UzC-MR-DGb"/>
                             <constraint firstItem="IqY-Rw-cKz" firstAttribute="centerX" secondItem="UdK-Wc-keD" secondAttribute="centerX" id="V4J-C2-ntf"/>
@@ -411,6 +412,19 @@
                             <constraint firstItem="RIl-IR-nrE" firstAttribute="centerY" secondItem="UdK-Wc-keD" secondAttribute="centerY" id="voX-a6-Lif"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="attackLbl" destination="Sg3-1I-lQC" id="rDP-Iz-EBQ"/>
+                        <outlet property="currentEvoImg" destination="lAJ-CJ-IKg" id="iFF-nS-IKp"/>
+                        <outlet property="defenseLbl" destination="neF-Wt-Krh" id="eeF-hw-9IQ"/>
+                        <outlet property="descriptionLbl" destination="cw5-8y-PHT" id="6eB-zo-SER"/>
+                        <outlet property="evoLbl" destination="7l5-7L-kba" id="hB5-Rq-WWX"/>
+                        <outlet property="heightLbl" destination="6oh-nT-ZVn" id="33p-rv-0Go"/>
+                        <outlet property="mainImg" destination="Sru-72-wNJ" id="KLN-IE-q5j"/>
+                        <outlet property="nextEvoImg" destination="Ntd-p5-B5n" id="p48-wC-Vm2"/>
+                        <outlet property="pokeIdLbl" destination="Gwn-yt-z2h" id="foy-M3-ai3"/>
+                        <outlet property="typeLbl" destination="JPd-pb-kPO" id="kLK-uY-J4X"/>
+                        <outlet property="weightLbl" destination="GOV-VZ-3gF" id="fRI-Yt-xiA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55L-0M-hbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
