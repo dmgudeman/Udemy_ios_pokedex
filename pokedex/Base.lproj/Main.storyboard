@@ -382,7 +382,7 @@
                                     <constraint firstItem="Ntd-p5-B5n" firstAttribute="trailing" secondItem="FNx-Jm-qd9" secondAttribute="trailingMargin" id="mxc-Rl-uOI"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Next Evolution Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-7L-kba">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Evolution Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-7L-kba">
                                 <frame key="frameInset" minX="52" minY="323" width="279" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="279" id="TbE-c5-dPO"/>
@@ -395,11 +395,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7l5-7L-kba" firstAttribute="centerX" secondItem="UdK-Wc-keD" secondAttribute="centerX" id="0Wf-UX-sVq"/>
                             <constraint firstItem="qKw-v7-xXS" firstAttribute="top" secondItem="UdK-Wc-keD" secondAttribute="top" id="43i-mm-VNK"/>
                             <constraint firstItem="FNx-Jm-qd9" firstAttribute="top" secondItem="RIl-IR-nrE" secondAttribute="bottom" constant="20" id="7sI-Xa-EyE"/>
                             <constraint firstAttribute="trailing" secondItem="RIl-IR-nrE" secondAttribute="trailing" id="C01-VH-cpf"/>
                             <constraint firstItem="RIl-IR-nrE" firstAttribute="leading" secondItem="UdK-Wc-keD" secondAttribute="leading" id="EyK-Yl-J70"/>
-                            <constraint firstItem="7l5-7L-kba" firstAttribute="top" secondItem="UdK-Wc-keD" secondAttribute="top" constant="323" id="JVh-Jq-MPE"/>
                             <constraint firstItem="IqY-Rw-cKz" firstAttribute="top" secondItem="qKw-v7-xXS" secondAttribute="bottom" constant="8" id="MeV-7G-2mJ"/>
                             <constraint firstAttribute="trailing" secondItem="FNx-Jm-qd9" secondAttribute="trailing" id="UzC-MR-DGb"/>
                             <constraint firstItem="IqY-Rw-cKz" firstAttribute="centerX" secondItem="UdK-Wc-keD" secondAttribute="centerX" id="V4J-C2-ntf"/>
@@ -409,6 +409,7 @@
                             <constraint firstItem="qKw-v7-xXS" firstAttribute="leading" secondItem="UdK-Wc-keD" secondAttribute="leading" id="dDr-gO-S9S"/>
                             <constraint firstItem="FNx-Jm-qd9" firstAttribute="leading" secondItem="UdK-Wc-keD" secondAttribute="leading" id="mYF-7a-Msh"/>
                             <constraint firstAttribute="trailing" secondItem="qKw-v7-xXS" secondAttribute="trailing" id="mgW-3f-vxc"/>
+                            <constraint firstItem="7l5-7L-kba" firstAttribute="top" secondItem="IqY-Rw-cKz" secondAttribute="bottom" constant="8" id="msR-GA-EVa"/>
                             <constraint firstItem="RIl-IR-nrE" firstAttribute="centerY" secondItem="UdK-Wc-keD" secondAttribute="centerY" id="voX-a6-Lif"/>
                         </constraints>
                     </view>
@@ -421,7 +422,7 @@
                         <outlet property="heightLbl" destination="6oh-nT-ZVn" id="33p-rv-0Go"/>
                         <outlet property="mainImg" destination="Sru-72-wNJ" id="KLN-IE-q5j"/>
                         <outlet property="nextEvoImg" destination="Ntd-p5-B5n" id="p48-wC-Vm2"/>
-                        <outlet property="pokeIdLbl" destination="Gwn-yt-z2h" id="foy-M3-ai3"/>
+                        <outlet property="pokedexId" destination="EpM-8O-GFD" id="YUV-rL-Eab"/>
                         <outlet property="typeLbl" destination="JPd-pb-kPO" id="kLK-uY-J4X"/>
                         <outlet property="weightLbl" destination="GOV-VZ-3gF" id="fRI-Yt-xiA"/>
                     </connections>
@@ -429,24 +430,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55L-0M-hbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="583.125" y="87.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="y1R-7q-oEQ">
-            <objects>
-                <viewController id="cRD-2P-5Dz" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ueQ-rD-fnp"/>
-                        <viewControllerLayoutGuide type="bottom" id="5U5-7h-HPG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JyY-ly-kHG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-0D-1ZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1606" y="88"/>
         </scene>
     </scenes>
     <resources>

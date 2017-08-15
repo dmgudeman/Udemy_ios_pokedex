@@ -15,7 +15,7 @@ class PokemonDetailVC: UIViewController {
   @IBOutlet weak var typeLbl: UILabel!
   @IBOutlet weak var defenseLbl: UILabel!
   @IBOutlet weak var heightLbl: UILabel!
-  @IBOutlet weak var pokeIdLbl: UILabel!
+  @IBOutlet weak var pokedexId: NSLayoutConstraint!
   @IBOutlet weak var weightLbl: UILabel!
   @IBOutlet weak var attackLbl: UILabel!
   @IBOutlet weak var currentEvoImg: UIImageView!
